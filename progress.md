@@ -1,23 +1,31 @@
-﻿# Progress Log - HK POS Ads Planning
+# Progress Log - HK POS Ads Planning
 
 ## 2026-02-12
-- Installed planning-with-files skill at:
-  - C:\Users\Administrator\.codex\skills\planning-with-files\SKILL.md
-- Initialized project memory files:
+- Resumed from planning-with-files memory:
   - task_plan.md
   - findings.md
   - progress.md
-- Built and published strategy v1 HTML page.
-- Enabled GitHub Pages for repo (main/docs).
+  - docs/index.html
+- Verified local and GitHub remote alignment:
+  - local `main` = `origin/main` at commit `85fb839`
+- Completed v1.1 refinement package:
+  - Updated `docs/index.html` (Phase 2 deliverables + KPI/QA additions)
+  - Added v1.1 snapshot in `docs/versions/`
+  - Updated `CHANGELOG.md` with v1.1.0 release notes
+- Updated planning memory files for session continuity:
+  - task_plan.md
+  - findings.md
+  - progress.md
 
-## 2026-02-12 (handoff-hardening)
-- Rewrote planning files for reliable multi-session continuation.
-- Added explicit resume order and phase DoD in task_plan.md.
-- Consolidated locked inputs, definitions, decisions, and risks in findings.md.
-- Added next-session starter prompt file.
+## Notes
+- A content encoding mismatch caused contextual patch failure once; resolved by full-file replacement.
+- Scope lock preserved:
+  - Meta only
+  - HKD 6,000
+  - 70/30 split
+  - 09:00-22:00 HKT
 
 ## Next Planned Update
-- v1.1 content iteration:
-  1) finalize compliant copy claims
-  2) produce creative brief matrix
-  3) add tracking QA checklist and weekly KPI table
+1) Confirm compliance whitelist/blacklist wording.
+2) Ingest first-week real performance and calibrate KPI thresholds.
+3) Validate retargeting audience size/overlap and adjust structure if needed.

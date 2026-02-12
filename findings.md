@@ -1,4 +1,4 @@
-﻿# Findings - HK POS Ads Planning
+# Findings - HK POS Ads Planning
 
 ## Confirmed Business Inputs
 - Product: HK restaurant POS SaaS (B2B SMB)
@@ -26,7 +26,7 @@
   - 7-day activation rate = 30%
   - Denominator = successful login registrations
 
-## Strategy Decisions (v1)
+## Strategy Decisions (v1.1)
 - Total budget: HKD 6,000 / 30 days
 - Budget split:
   - C1 Consultation acquisition: HKD 4,200 (70%)
@@ -39,15 +39,27 @@
   - A3 Contract-expiry cost-down angle
   - A4 High-intent retargeting (30d)
   - A5 Post-registration non-activated (14d)
-- Optimization rule:
-  - stop/scale with 48-hour observation after each budget increase
+- New in v1.1:
+  - Claims boundary table (allowed/avoid/replacement wording)
+  - Creative matrix for 3 message angles with 1:1 + 9:16 requirements
+  - Tracking QA thresholds:
+    - Meta lead vs CRM variance <= 15%
+    - Registration event variance <= 10%
+    - Activation missing trace rate <= 5%
+  - Weekly KPI thresholds:
+    - Valid conversation rate >= 35%
+    - Consultation -> registration >= 20%
+    - 7-day activation >= 30%
 
 ## Risks and Assumptions
 - Risk: No public case proof may reduce trust at conversion stage.
-- Risk: Attribution chain not fully validated (GA4 + Firebase + CRM alignment pending).
+- Risk: Attribution chain still not validated with live data.
+- Risk: Compliance wording not legally confirmed yet.
 - Assumption: Sales can execute agreed SLA consistently during ad hours.
 
-## Pending Data to Improve v1.1
+## Pending Data to Improve v1.2
 - Real valid-conversation rate baseline
 - Real consultation-to-registration conversion rate
 - Real registration-to-effective-activation conversion and time-to-activate
+- Legal-approved wording whitelist/blacklist
+- Actual creative asset inventory and production lead time

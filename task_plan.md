@@ -1,4 +1,4 @@
-﻿# Task Plan - HK POS Ads Planning
+# Task Plan - HK POS Ads Planning
 
 If resumed: read files in this order:
 1) task_plan.md
@@ -11,10 +11,10 @@ Deliver and iterate an execution-ready first-month Meta ads strategy for Hong Ko
 
 ## Current Status
 - Phase 1 complete: Strategy v1 published to HTML and GitHub Pages.
-- Phase 2 in progress: Copy/message refinement and creative production brief.
-- Phase 3 pending: Tracking and audience quality verification.
-- Phase 4 pending: Weekly dashboard and baseline refresh workflow.
-- Phase 5 pending: v1.1 release and internal handoff package.
+- Phase 2 complete: Copy/message refinement and creative production brief published in v1.1.
+- Phase 3 in progress: Tracking and audience quality verification framework defined; waiting for real data validation.
+- Phase 4 in progress: Weekly KPI dashboard and numeric thresholds now documented; pending week-level live calibration.
+- Phase 5 in progress: v1.1 artifacts published; handoff questions prepared.
 
 ## Scope Lock (Do Not Change Without Explicit Approval)
 - Channel: Meta only (Facebook / Instagram)
@@ -47,16 +47,16 @@ Deliver and iterate an execution-ready first-month Meta ads strategy for Hong Ko
   - handoff note added for next session
 
 ## Open Questions (Need User Input)
-1. Compliance boundary for ad copy claims (cost-saving phrasing limits)
-2. Available creative assets inventory (image/video/raw materials)
-3. Current data reliability for activation event chain
+1. Legal/compliance final boundary for cost-saving phrasing (what is strictly disallowed in ads).
+2. Real creative asset inventory available this week (photos, videos, screenshots, UGC style clips).
+3. Data reliability reality check for activation chain (Meta -> GA4/Firebase -> CRM match rate).
 
 ## Next Session First Actions
-1. Confirm copy compliance boundaries and claim-safe wording.
-2. Produce the v1.1 copy block and creative brief table.
-3. Update docs/index.html + docs/versions snapshot + CHANGELOG.
+1. Confirm compliance whitelist/blacklist wording with legal/sales lead.
+2. Collect first-week real metrics and compare with current KPI thresholds.
+3. Validate audience overlap and exclusion in ad account, then adjust A1/A2/A3 split if needed.
 
 ## Error Log
 | Date | Error | Attempt | Resolution | Notes |
 |---|---|---:|---|---|
-| 2026-02-12 | N/A | 0 | N/A | No blocking errors in planning files |
+| 2026-02-12 | apply_patch context mismatch on legacy files | 1 | Replaced full file content instead of contextual patching | Triggered by encoding/content drift |
