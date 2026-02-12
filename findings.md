@@ -1,18 +1,25 @@
 ﻿# Findings - HK POS Ads Planning
 
-## Confirmed Direction
-- This document is for leadership review, not execution-detail review.
-- Main output must show: direction, phased actions, checkpoints, expected outcomes.
-- Month-1 hard goal: 5 effective activations.
-- Ad-side pass line: 40-60 consultations (target 50) under HKD 6,000 budget.
-- No fixed ROI numeric threshold in month-1 due to missing baseline.
+## Confirmed Management Inputs
+- Business value priority:
+  - Primary: build benchmark customer foundation (C)
+  - Secondary: validate scalable acquisition model (B)
+- Checkpoint method: budget checkpoints as primary + time checkpoints as fallback.
+- Risk priorities:
+  - P1: consultation volume under target
+  - P2: consultation quality under expectation
+- Ownership detail: no named owner block in this version.
+- Budget rule: additional budget can be requested only after threshold pass.
+- Attribution order when under target:
+  1) traffic volume
+  2) consultation quality
+  3) activation handoff
 
-## Strategic Framing
-- Ad function: stabilize consultation volume.
-- Sales/ops function: convert consultations to activation.
-- Management decisions should be made by checkpoint signals, not by isolated creative details.
+## Locked Numbers
+- Month-1 budget: HKD 6,000
+- Consultation goal: 40-60 (target 50)
+- Effective activation goal: 5
 
 ## Pending Inputs
-- Spend checkpoint granularity.
-- Consultation minimum at each checkpoint.
-- Leadership review cadence.
+- Consultation minimum required at each budget checkpoint.
+- Fallback time checkpoint cadence.
