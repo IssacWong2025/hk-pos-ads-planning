@@ -1,24 +1,12 @@
-# Progress Log - HK POS Ads Planning
+﻿# Progress Log - HK POS Ads Planning
 
-## 2026-02-12 (leadership strategy alignment)
-- Ran brainstorming flow with user to refocus strategy level.
-- Confirmed leadership-view priorities:
-  - Hard goal: 5 effective activations in month-1
-  - Ad pass line: 40-60 consultations (target 50)
-  - Stage model: cold start -> validation -> scale
-  - Trigger model: consultation threshold at spend checkpoints
-  - ROI: no fixed numeric baseline in month-1
+## 2026-02-12
+- Reworked `docs/index.html` into leadership output style (v1.2.1).
+- Removed question/answer style wording from main page.
+- Added snapshot file:
+  - `docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.2.1.管理層版.html`
+- Updated `CHANGELOG.md`, `task_plan.md`, and `findings.md` for continuity.
 
-## 2026-02-12 (v1.2 content rewrite)
-- Rewrote `docs/index.html` into management-focused strategy page.
-- Added version snapshot:
-  - `docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.2.管理層版.html`
-- Updated planning memory files:
-  - task_plan.md
-  - findings.md
-  - progress.md
-
-## Next Planned Update
-1) Add spend-node threshold table to the leadership page.
-2) Confirm checkpoint thresholds with user.
-3) Publish/push and verify GitHub Pages rendering.
+## Next
+1. Add spend-node consultation threshold table once user confirms checkpoint granularity.
+2. Keep all subsequent edits in leadership reporting style.
