@@ -1,31 +1,24 @@
 # Progress Log - HK POS Ads Planning
 
-## 2026-02-12
-- Resumed from planning-with-files memory:
-  - task_plan.md
-  - findings.md
-  - progress.md
-  - docs/index.html
-- Verified local and GitHub remote alignment:
-  - local `main` = `origin/main` at commit `85fb839`
-- Completed v1.1 refinement package:
-  - Updated `docs/index.html` (Phase 2 deliverables + KPI/QA additions)
-  - Added v1.1 snapshot in `docs/versions/`
-  - Updated `CHANGELOG.md` with v1.1.0 release notes
-- Updated planning memory files for session continuity:
-  - task_plan.md
-  - findings.md
-  - progress.md
+## 2026-02-12 (leadership strategy alignment)
+- Ran brainstorming flow with user to refocus strategy level.
+- Confirmed leadership-view priorities:
+  - Hard goal: 5 effective activations in month-1
+  - Ad pass line: 40-60 consultations (target 50)
+  - Stage model: cold start -> validation -> scale
+  - Trigger model: consultation threshold at spend checkpoints
+  - ROI: no fixed numeric baseline in month-1
 
-## Notes
-- A content encoding mismatch caused contextual patch failure once; resolved by full-file replacement.
-- Scope lock preserved:
-  - Meta only
-  - HKD 6,000
-  - 70/30 split
-  - 09:00-22:00 HKT
+## 2026-02-12 (v1.2 content rewrite)
+- Rewrote `docs/index.html` into management-focused strategy page.
+- Added version snapshot:
+  - `docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.2.管理層版.html`
+- Updated planning memory files:
+  - task_plan.md
+  - findings.md
+  - progress.md
 
 ## Next Planned Update
-1) Confirm compliance whitelist/blacklist wording.
-2) Ingest first-week real performance and calibrate KPI thresholds.
-3) Validate retargeting audience size/overlap and adjust structure if needed.
+1) Add spend-node threshold table to the leadership page.
+2) Confirm checkpoint thresholds with user.
+3) Publish/push and verify GitHub Pages rendering.
