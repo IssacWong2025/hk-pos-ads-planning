@@ -1,5 +1,10 @@
 ﻿# Progress Log - HK POS Ads Planning
 
+## 2026-02-13（v1.4.3）
+- 在不改信息内容前提下，重构页面呈现：改为「重点直读 + 细节折叠展开」。
+- 新增“三秒抓重点”区，降低卡片阅读密度。
+- 将原有详细模块改为 details 可展开结构，提升一眼抓重点能力。
+- 新增快照：docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.4.3.管理層啟動決策版.html
 ## 2026-02-13（v1.4.2）
 - 依 rontend-design + interactive-dashboard-builder 思路，重構資訊呈現層級與視覺節奏。
 - 新增決策條（啟動建議 / 控制方式 / 加碼條件）與規劃值口徑提醒。
@@ -39,5 +44,6 @@
 - 新增快照：`docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.3.管理層決策版.html`
 - 更新：`CHANGELOG.md`、`task_plan.md`、`findings.md`、`progress.md`
 - 最新已推送提交：`f931e94`
+
 
 

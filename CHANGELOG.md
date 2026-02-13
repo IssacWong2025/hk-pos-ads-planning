@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## v1.4.3 - 2026-02-13
+- Rebuilt presentation layout for faster scanability without changing underlying planning information.
+- Introduced a "3-second focus" block and converted dense lower sections into expandable evidence modules.
+- Preserved all v1.4.2 strategic content and wording while reducing visual density.
+- Added snapshot: docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.4.3.管理層啟動決策版.html.
 ## v1.4.2 - 2026-02-13
 - Applied frontend-design and interactive-dashboard-style refinements to improve executive readability.
 - Kept all v1.4.1 pre-launch decision content intact, while restructuring hierarchy to "decision strip -> KPI board -> channel split -> decision gates -> full planning modules".
@@ -54,6 +59,7 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
+
 
 
 
