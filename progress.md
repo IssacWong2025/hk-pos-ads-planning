@@ -1,5 +1,10 @@
 ﻿# Progress Log - HK POS Ads Planning
 
+## 2026-02-13（v1.4.2）
+- 依 rontend-design + interactive-dashboard-builder 思路，重構資訊呈現層級與視覺節奏。
+- 新增決策條（啟動建議 / 控制方式 / 加碼條件）與規劃值口徑提醒。
+- 保留 v1.4.1 全部關鍵策略內容，不改決策邏輯，只優化表達與可讀性。
+- 新增快照：docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.4.2.管理層啟動決策版.html
 ## 2026-02-13（v1.4.1）
 - 修正 v1.4 語境偏差：由每週復盤口吻改回投放前啟動決策口吻。
 - 恢復 v1.3.x 關鍵信息：策略主線、分階段里程碑、節點機制、風險預案、追加預算機制、未達標歸因順序。
@@ -34,4 +39,5 @@
 - 新增快照：`docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.3.管理層決策版.html`
 - 更新：`CHANGELOG.md`、`task_plan.md`、`findings.md`、`progress.md`
 - 最新已推送提交：`f931e94`
+
 
