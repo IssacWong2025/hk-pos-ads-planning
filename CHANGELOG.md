@@ -1,5 +1,12 @@
 ﻿# Changelog
 
+## v1.4.0 - 2026-02-13
+- Reframed the page into an executive reporting format focused on "numbers first, decision second".
+- Added a 6-card leadership dashboard: spend, CPM (total/FB/IG), estimated impressions, consultations, activations, budget signal light.
+- Added Facebook vs Instagram channel comparison for decision-level interpretation only.
+- Added weekly decision gate section (green/yellow/red) and explicit leadership sign-off requests.
+- Upgraded visual hierarchy and readability for faster internal reporting.
+- Added snapshot: docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.4.管理層匯報版.html.
 ## v1.3.2 - 2026-02-13
 - Added executive-level channel split for Meta by placing a dedicated Facebook vs Instagram CPM section in `docs/index.html`.
 - Added management-readable CPM range assumptions (HKD) and estimated impressions under a HKD 3,000 per-channel scenario.
@@ -37,3 +44,4 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
+
