@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## v1.5.0 - 2026-02-13
+- Reframed the page into a management decision cockpit with visualization-first layout.
+- Added sticky decision bar, KPI cockpit micro visualizations, channel split cards, gate timeline, and risk/attribution diagrams.
+- Preserved existing planning information while changing presentation to improve executive scan speed.
+- Added snapshot: docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.5.管理層決策駕駛艙.html.
 ## v1.4.3 - 2026-02-13
 - Rebuilt presentation layout for faster scanability without changing underlying planning information.
 - Introduced a "3-second focus" block and converted dense lower sections into expandable evidence modules.
@@ -59,6 +64,7 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
+
 
 
 
