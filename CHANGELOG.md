@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## v1.5.1 - 2026-02-13
+- Reworked visual density based on review feedback without changing planning content.
+- Expanded appendix content from collapsible blocks into always-visible visual sections.
+- Split KPI area into multiple rows, removed the startup signal KPI card, and removed the notation callout below KPI cards.
+- Added snapshot: docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.5.1.管理層決策駕駛艙.html.
 ## v1.5.0 - 2026-02-13
 - Reframed the page into a management decision cockpit with visualization-first layout.
 - Added sticky decision bar, KPI cockpit micro visualizations, channel split cards, gate timeline, and risk/attribution diagrams.
@@ -64,6 +69,7 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
+
 
 
 
