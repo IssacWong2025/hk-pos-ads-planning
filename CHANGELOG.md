@@ -1,5 +1,10 @@
 ﻿# Changelog
 
+## v1.4.1 - 2026-02-13
+- Corrected v1.4 narrative scope from weekly-review tone to pre-launch decision tone.
+- Restored key leadership planning modules carried from v1.3.x: strategy line, staged milestones, budget/time checkpoints, risk playbook, budget expansion rules, and failure attribution order.
+- Kept the executive-friendly visual layout and numbers-first opening while marking KPI cards as planning assumptions.
+- Added snapshot: docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.4.1.管理層啟動決策版.html.
 ## v1.4.0 - 2026-02-13
 - Reframed the page into an executive reporting format focused on "numbers first, decision second".
 - Added a 6-card leadership dashboard: spend, CPM (total/FB/IG), estimated impressions, consultations, activations, budget signal light.
@@ -44,4 +49,5 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
+
 
