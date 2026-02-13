@@ -1,5 +1,20 @@
 ﻿# Changelog
 
+## v1.3.2 - 2026-02-13
+- Added executive-level channel split for Meta by placing a dedicated Facebook vs Instagram CPM section in `docs/index.html`.
+- Added management-readable CPM range assumptions (HKD) and estimated impressions under a HKD 3,000 per-channel scenario.
+- Clarified CPM terminology and usage boundary (for budget interpretation, not performance guarantee).
+- Renumbered section structure to include the new channel-cost layer.
+
+## v1.3.1 - 2026-02-13
+- Added budget-led checkpoints with explicit thresholds in `docs/index.html`:
+  - HKD 2,000 -> minimum 12 consultations
+  - HKD 4,000 -> minimum 30 consultations
+  - HKD 6,000 -> minimum 50 consultations
+- Added time fallback cadence: weekly review every 7 days.
+- Added a new "Weekly leadership dashboard" section (direction / phase / outcome).
+- Added snapshot: `docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.3.1.管理層決策版.html`.
+
 ## v1.3.0 - 2026-02-12
 - Upgraded the page to leadership decision format using six missing management dimensions:
   - business value anchor (primary C, secondary B)

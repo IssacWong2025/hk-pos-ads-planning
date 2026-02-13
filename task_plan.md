@@ -1,26 +1,27 @@
 ﻿# Task Plan - HK POS Ads Planning
 
-## Objective
-Deliver and maintain a leadership-facing Meta launch plan that supports executive decisions with clear goals, staged actions, and decision gates.
+## 目标
+维护并迭代一份“管理层可直接决策”的首月 Meta 投放规划，核心是方向、阶段动作、检查节点与结果判断。
 
-## Current Status
-- Leadership decision version v1.3 completed.
-- Six critical management gaps have been incorporated into the strategy page.
+## 当前状态（2026-02-13）
+- `docs/index.html` 已升级为 v1.3.2 管理层决策版。
+- 已在管理层层面补入“Facebook / Instagram 渠道成本预估（CPM）”模块。
+- 已新增快照：`docs/versions/首月HKD6000香港餐飲POSMeta投放規劃.v1.3.2.管理層決策版.html`
 
-## Scope Lock
-- Channel: Meta only
-- Budget: HKD 6,000 (month-1)
-- Market: Hong Kong
-- Language: Traditional Chinese only
-- Ad window: 09:00-22:00 HKT
+## 锁定前提（不可变）
+- 渠道：Meta only
+- 预算：HKD 6,000（首月）
+- 目标市场：香港
+- 语言：繁中
+- 投放时段：09:00-22:00（HKT）
 
-## Leadership Criteria
-- Hard goal: 5 effective activations.
-- Ad pass line: 40-60 consultations (target 50).
-- Stage model: cold start -> validation -> scale.
-- Checkpoint model: budget-node primary, time-node fallback.
+## 管理层判断标准
+- 硬结果目标：5 个有效激活
+- 广告端通过线：40-60 条咨询（目标值 50）
+- 阶段模型：冷启动 -> 验证 -> 放大
+- 复盘触发：预算节点到达但咨询未达节点门槛
 
-## Next Actions
-1. Confirm numeric threshold per budget node for consultation minimum.
-2. Add a compact weekly executive dashboard block to the page.
-3. Continue iterative updates in leadership output style only.
+## 下一步（待确认）
+1. 明确 FB / IG 在首月预算中的管理层分配原则（例如稳态/攻势两档）。
+2. 将渠道成本区间与节点机制联动（节点达成时，判断是成本偏移还是承接偏移）。
+3. 增加一版可打印导出布局（管理层会议版，A4 友好）。

@@ -1,25 +1,30 @@
 ﻿# Findings - HK POS Ads Planning
 
-## Confirmed Management Inputs
-- Business value priority:
-  - Primary: build benchmark customer foundation (C)
-  - Secondary: validate scalable acquisition model (B)
-- Checkpoint method: budget checkpoints as primary + time checkpoints as fallback.
-- Risk priorities:
-  - P1: consultation volume under target
-  - P2: consultation quality under expectation
-- Ownership detail: no named owner block in this version.
-- Budget rule: additional budget can be requested only after threshold pass.
-- Attribution order when under target:
-  1) traffic volume
-  2) consultation quality
-  3) activation handoff
+## 已确认背景
+- 本规划用于给领导看“决策状态”，不是执行细节文档。
+- 首月硬目标：5 个有效激活。
+- 广告端达标线：40-60 条咨询（目标值 50）。
+- 商业价值优先级：
+  - 主：建立标杆客户基础（C）
+  - 次：验证可复制获客模型（B）
 
-## Locked Numbers
-- Month-1 budget: HKD 6,000
-- Consultation goal: 40-60 (target 50)
-- Effective activation goal: 5
+## 已确认机制
+- 节点机制：预算节点为主，时间节点兜底。
+- 锁定预算节点：HKD 2,000 / 4,000 / 6,000。
+- 最低咨询门槛：12 / 30 / 50。
+- 时间兜底频率：每 7 天固定检查一次。
+- 风险优先级：
+  - P1：咨询量不足
+  - P2：咨询质量偏弱
+- 预算机制：可申请追加预算，但必须先过门槛。
+- 归因顺序：流量 -> 质量 -> 承接激活。
+- 当前版本暂不写责任人。
 
-## Pending Inputs
-- Consultation minimum required at each budget checkpoint.
-- Fallback time checkpoint cadence.
+## 本轮新增结论
+- “周度管理层看板”已可作为周会统一口径，按方向 / 阶段 / 结果三维判断推进状态。
+- 节点门槛已形成明确停损触发条件，管理层可据此决定“继续推进”或“立即复盘”。
+- 管理层层面需补充渠道成本解释：Meta 不应只看总盘，需能回答 FB/IG CPM 差异与展示量预估。
+- CPM 可作为老板问答中的渠道层成本指标，口径为每千次展示成本（Cost Per 1,000 Impressions）。
+
+## 仍待输入
+- 是否在周度看板增加“追加预算建议”栏位（建议下轮确认）。
