@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v1.6.2 - 2026-02-24
+- Added a collapsible real-world Meta ad preview gallery using downloaded local screenshots for Feed, Stories, Reels, Click-to-Message, and Lead Ads, each with source attribution and disclaimer.
+- Clarified in the Meta format section that Reels and Stories have placements on both Facebook and Instagram (depending on settings).
+- Updated the primary user path to Click-to-Message (WhatsApp/Messenger) and changed Lead Ads to the supporting path.
+- Rebuilt the first-month testing matrix based on gotappo.com value propositions: Pay as you go (No Contracts + No Monthly Fees), Unified Delivery Aggregator, and Contactless QR Ordering.
+
 ## v1.6.1 - 2026-02-24
 - Rebuilt the Meta ad format module into a three-layer executive explainer: one-line visual descriptions, pure HTML/CSS placement mockup, and primary/fallback user-path flows.
 - Upgraded the format comparison table fields for management decisions: goal, what users see, click destination path, advantage, risk/limitation, and usage prerequisites.
@@ -82,3 +88,4 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
+

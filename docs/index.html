@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.1（管理層決策頁）</title>
+  <title>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.2（管理層決策頁）</title>
   <style>
     :root {
       --bg: #f3f7fb;
@@ -265,6 +265,25 @@
       line-height: 1.7;
     }
 
+    .preview-wrap { margin-top: 10px; }
+    .preview-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
+    .preview-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 8px;
+    }
+    .preview-item img {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #dbe5f4;
+      background: #f7faff;
+    }
+    .src-note { font-size: 11px; color: var(--muted); line-height: 1.5; margin-top: 6px; }
+    details summary { cursor: pointer; font-weight: 700; color: #1f3f7a; }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -309,8 +328,8 @@
 
   <div class="wrap">
     <section class="hero">
-      <h1>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.1（管理層決策頁）</h1>
-      <div class="meta">版本：v1.6.1 | 日期：2026-02-24 | 地區：香港 | 渠道：Meta（Facebook / Instagram）| 投放時段：09:00-22:00（HKT）</div>
+      <h1>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.2（管理層決策頁）</h1>
+      <div class="meta">版本：v1.6.2 | 日期：2026-02-24 | 地區：香港 | 渠道：Meta（Facebook / Instagram）| 投放時段：09:00-22:00（HKT）</div>
       <p>本版聚焦三項決策：是否啟動、用哪種廣告形式、如何用闸門控制風險並推進有效激活。</p>
       <span class="chip">Executive Decision Page</span>
     </section>
@@ -373,9 +392,10 @@
       </section>
     </div>
 
-    <h2>三、Meta 廣告形式管理層速覽（v1.6.1）</h2>
+    <h2>三、Meta 廣告形式管理層速覽（v1.6.2）</h2>
     <section class="card" style="margin-bottom: 10px;">
       <h3>第一層：一句話畫面（看到什麼，點了去哪）</h3>
+      <p>Reels 與 Stories 在 Facebook 與 Instagram 都有對應版位，投放時可分別覆蓋 Facebook Reels/Stories 與 Instagram Reels/Stories（視設定而定）。</p>
       <ul>
         <li><strong>Feed：</strong>像一般滑動貼文中的贊助內容，點擊後通常進入表單或訊息頁。</li>
         <li><strong>Stories：</strong>全螢幕直式畫面，點擊後直接跳轉到表單或對話入口。</li>
@@ -386,7 +406,7 @@
     </section>
 
     <section class="card" style="margin-bottom: 10px;">
-      <h3>第二層：版位與形式示意圖（純 HTML/CSS）</h3>
+      <h3>第二層：版位地圖（結構示意）</h3>
       <div class="visual-stack">
         <div class="card" style="box-shadow:none;">
           <div class="phone">
@@ -408,20 +428,52 @@
           </div>
         </div>
       </div>
+      <div class="preview-wrap">
+        <details>
+          <summary>真實畫面預覽（示例，點擊展開）</summary>
+          <div class="preview-grid" style="margin-top: 10px;">
+            <div class="preview-item">
+              <img src="./assets/meta-previews/preview_feed.png" alt="Feed 廣告示例" />
+              <div class="src-note">Feed：用戶在 FB/IG 貼文流看到 Sponsored 廣告，點 CTA 進入商品頁、表單或訊息頁。</div>
+              <div class="src-note">來源：Hootsuite｜Instagram ads: Everything you need to know in 2026｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
+            </div>
+            <div class="preview-item">
+              <img src="./assets/meta-previews/preview_stories.png" alt="Stories 廣告示例" />
+              <div class="src-note">Stories：用戶在 FB/IG 限時動態全屏看到廣告，點 CTA 直接跳轉落地頁或訊息入口。</div>
+              <div class="src-note">來源：Hootsuite｜Instagram ads: Everything you need to know in 2026｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
+            </div>
+            <div class="preview-item">
+              <img src="./assets/meta-previews/preview_reels.png" alt="Reels 廣告示例" />
+              <div class="src-note">Reels：用戶在 FB/IG Reels 短片流看到 Sponsored 插播廣告，點 CTA 進入訊息或落地頁。</div>
+              <div class="src-note">來源：Hootsuite｜Instagram ads: Everything you need to know in 2026｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
+            </div>
+            <div class="preview-item">
+              <img src="./assets/meta-previews/preview_click_to_message.png" alt="Click-to-Message 廣告示例" />
+              <div class="src-note">Click-to-Message：用戶在廣告點「Send Message」後進入 WhatsApp/Messenger 對話，開始問答分流。</div>
+              <div class="src-note">來源：SleekFlow｜Click to WhatsApp ads: How to reduce cost on Facebook ads｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
+            </div>
+            <div class="preview-item">
+              <img src="./assets/meta-previews/preview_lead_ads.png" alt="Lead Ads 即時表單示例" />
+              <div class="src-note">Lead Ads：用戶點 CTA 後在 Meta App 內彈出即時表單，填寫後直接提交至名單池。</div>
+              <div class="src-note">來源：WordStream｜6 Simple Steps to a Facebook Lead Ad that Converts like Crazy｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
+            </div>
+          </div>
+        </details>
+      </div>
     </section>
 
     <section class="card" style="margin-bottom: 10px;">
       <h3>第三層：本案主選與備選的用戶路徑</h3>
       <div class="flow-grid">
         <div class="flow-box">
-          <strong>主選路徑（維持 v1.6）：Lead Ads + Click-to-Message</strong>
-          <div class="flow-line">看到廣告 -> 點擊 CTA -> Meta 即時表單/訊息入口 -> 留資或提問 -> 進入 CRM 跟進名單</div>
-          <p>用途：同時拿到名單量與高意向對話，維持首月樣本穩定。</p>
+          <strong>主選路徑：Click-to-Message（WhatsApp/Messenger）為主</strong>
+          <div class="flow-line">看到廣告 -> 點 CTA -> 打開 WhatsApp / Messenger 對話 -> 以 2-3 個篩選問題確認是否有效諮詢 -> 進入跟進記錄或 CRM</div>
+          <p>用途：先用對話拿到高意向樣本，再按有效諮詢率決定放量。</p>
         </div>
         <div class="flow-box">
-          <strong>備選切換（主選不達標時）</strong>
-          <div class="flow-line">看到 Reels/Feed 影片 -> 點擊 -> 訊息入口或補充表單 -> 新素材/新受眾測試 -> 回流到同一跟進口徑</div>
-          <p>切換條件：當 CPL 過高或有效諮詢率偏低，優先加測 Reels/Feed 影片流補充受眾。</p>
+          <strong>輔選路徑：Lead Ads（補量與穩定）</strong>
+          <div class="flow-line">看到廣告 -> 點 CTA -> 彈出 Meta 即時表單 -> 提交 -> 進入名單池或 CRM -> 後續跟進</div>
+          <p>切換策略：當主選 CPL 過高或有效諮詢率偏低時，用 Lead Ads 補足樣本量並穩定成本。</p>
         </div>
       </div>
     </section>
@@ -562,31 +614,31 @@
       </table>
     </section>
 
-    <h2>七、首月測試矩陣（HKD 8,000）</h2>
+    <h2>七、首月測試矩陣（HKD 8,000，按 gotappo.com 賣點）</h2>
     <section class="card">
       <table>
         <thead>
           <tr>
             <th>核心賣點 \ 廣告形式</th>
-            <th>Lead Ads（即時表單）</th>
-            <th>Click-to-Message（對話）</th>
+            <th>Click-to-Message（主）</th>
+            <th>Lead Ads（輔）</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>成本可控</strong><br />主張：月費清晰、首月導入門檻低</td>
-            <td>測什麼：低門檻方案是否提升留資率。<br />成功信號：CPL 下降且有效諮詢率不掉。</td>
-            <td>測什麼：價格問題是否能在對話中快速澄清。<br />成功信號：對話到有效諮詢轉化率提升。</td>
+            <td><strong>Pay as you go</strong><br />No Contracts + No Monthly Fees（只為使用付費）</td>
+            <td>測什麼：在對話首句直接帶出「無合約、無月費」能否提升回覆意願。<br />成功信號：對話啟動率上升，且有效諮詢率維持或提升。</td>
+            <td>測什麼：表單標題強調「No Contracts + No Monthly Fees」能否提高提交意願。<br />成功信號：CPL 下降，且無效原因中「預算不符」占比下降。</td>
           </tr>
           <tr>
-            <td><strong>履約穩定</strong><br />主張：落單、出餐、收款流程更順</td>
-            <td>測什麼：流程痛點型文案能否吸引店主留資。<br />成功信號：店長/老闆身份線索比例提升。</td>
-            <td>測什麼：場景問答能否拉高高意向對話。<br />成功信號：進入試用狀態的線索占比提升。</td>
+            <td><strong>Unified Delivery Aggregator</strong><br />多平台訂單一隊列 + 菜單/庫存同步</td>
+            <td>測什麼：以「多平台訂單集中處理」為主題的問答能否吸引外送量高門店。<br />成功信號：有效諮詢中「外送平台多店」比例提升，進入試用比例提升。</td>
+            <td>測什麼：表單加入「目前使用幾個外送平台」欄位是否提升線索可分層性。<br />成功信號：有效諮詢率提升，且高價值線索占比提升。</td>
           </tr>
           <tr>
-            <td><strong>人手效率</strong><br />主張：減少手寫單與對帳負擔</td>
-            <td>測什麼：效率型素材是否帶來新客群。<br />成功信號：連鎖/多店線索比例上升。</td>
-            <td>測什麼：對話中展示功能點是否促進試用意願。<br />成功信號：對話後 48 小時內進試用率提升。</td>
+            <td><strong>Contactless QR Ordering</strong><br />掃碼點單支付 + 更快翻台/更短排隊</td>
+            <td>測什麼：以「縮短排隊、加快翻台」情境提問，能否拉高高峰時段痛點客群回覆。<br />成功信號：有效諮詢率提升，且激活完成率（三項）提升。</td>
+            <td>測什麼：表單創意展示掃碼點單流程，是否能提高店內用餐型門店留資。<br />成功信號：提交率穩定下，進入試用比例提升。</td>
           </tr>
         </tbody>
       </table>
