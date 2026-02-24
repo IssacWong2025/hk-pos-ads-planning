@@ -1,5 +1,12 @@
 ﻿# Changelog
 
+## v1.6.3 - 2026-02-24
+- Removed the placement-map structural mockup block and switched the real screenshot gallery to be always visible (no details/summary collapse), with tighter per-image captions and preserved source notes.
+- Standardized the effective activation target to 5 across KPI and related planning wording, and added a compact funnel-assumption line near KPI/gate context.
+- Updated Click-to-Message primary-path content with a fixed 3-question qualifier set plus a default effective-inquiry rule and invalid-reason logging instruction.
+- Cleaned the testing-matrix title by removing parenthetical text, and added one-line launch creative format guidance in every matrix cell.
+- Refined attribution wording from handoff language to downstream conversion language, and clarified blockage checks using trial/login, device binding, and menu-input completion events.
+
 ## v1.6.2 - 2026-02-24
 - Added a collapsible real-world Meta ad preview gallery using downloaded local screenshots for Feed, Stories, Reels, Click-to-Message, and Lead Ads, each with source attribution and disclaimer.
 - Clarified in the Meta format section that Reels and Stories have placements on both Facebook and Instagram (depending on settings).
