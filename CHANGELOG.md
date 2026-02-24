@@ -1,5 +1,11 @@
 ﻿# Changelog
 
+## v1.6.1 - 2026-02-24
+- Rebuilt the Meta ad format module into a three-layer executive explainer: one-line visual descriptions, pure HTML/CSS placement mockup, and primary/fallback user-path flows.
+- Upgraded the format comparison table fields for management decisions: goal, what users see, click destination path, advantage, risk/limitation, and usage prerequisites.
+- Replaced the previous appendix with two execution-focused modules: "回流與口徑" field table and "首月測試矩陣" for structured HKD 8,000 testing.
+- Updated page versioning to v1.6.1 and removed SLA-focused wording from the new/updated decision modules.
+
 ## v1.6.0 - 2026-02-24
 - Upgraded first-month budget baseline from HKD 6,000 to HKD 8,000 across the decision page, including KPI, gate checkpoints, and budget mechanism wording.
 - Added a new top-level "背景與口徑總覽" block for executive scan, covering geo, channel, budget cycle, delivery hours, stakeholder groups, SLA, activation baseline, and definition callouts.

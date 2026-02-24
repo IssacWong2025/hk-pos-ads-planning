@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.0（管理層決策頁）</title>
+  <title>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.1（管理層決策頁）</title>
   <style>
     :root {
       --bg: #f3f7fb;
@@ -103,7 +103,6 @@
 
     .b-good { color: var(--good); background: #e7f5ef; border-color: #b8decf; }
     .b-warn { color: var(--warn); background: #fff4e2; border-color: #f0d8ab; }
-    .b-risk { color: var(--risk); background: #fdecef; border-color: #f0bec3; }
 
     .grid { display: grid; gap: 12px; }
     .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
@@ -202,6 +201,70 @@
 
     .tree-box { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: #fff; font-size: 13px; }
 
+    .visual-stack { display: grid; gap: 12px; grid-template-columns: 1.1fr 1fr; }
+    .phone {
+      width: 210px;
+      height: 390px;
+      margin: 8px auto;
+      border: 2px solid #1d2a44;
+      border-radius: 28px;
+      background: #fbfdff;
+      padding: 18px 10px 12px;
+      position: relative;
+    }
+
+    .phone::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70px;
+      height: 5px;
+      border-radius: 999px;
+      background: #a4b1c5;
+    }
+
+    .zone {
+      border: 1px dashed #9ab0d7;
+      border-radius: 10px;
+      padding: 8px;
+      color: #39507a;
+      font-size: 12px;
+      margin-bottom: 8px;
+      background: #f3f7ff;
+    }
+
+    .zone strong { display: block; color: #1d3767; }
+    .zone-feed { height: 120px; }
+    .zone-stories { height: 90px; }
+    .zone-reels { height: 120px; }
+    .mini-panels { display: grid; gap: 10px; }
+    .mini-panel {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      background: #fff;
+      font-size: 12px;
+    }
+
+    .flow-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .flow-box {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      font-size: 13px;
+    }
+
+    .flow-line {
+      margin-top: 8px;
+      color: #1f3f7a;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -227,6 +290,7 @@
       .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .timeline-row { grid-template-columns: 1fr; }
       .timeline-row::before { display: none; }
+      .visual-stack { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 560px) {
@@ -239,14 +303,14 @@
     <div class="decision-grid">
       <div class="decision-pill"><span>啟動建議</span><span class="badge b-warn">黃燈啟動（可控試驗）</span></div>
       <div class="decision-pill"><span>首月預算</span><span class="badge b-good">HKD 8,000 / 30 天</span></div>
-      <div class="decision-pill"><span>承接SLA</span><span class="badge b-good">5分鐘首響 + 24h 3次跟進</span></div>
+      <div class="decision-pill"><span>投放時段</span><span class="badge b-good">09:00-22:00（HKT）</span></div>
     </div>
   </div>
 
   <div class="wrap">
     <section class="hero">
-      <h1>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.0（管理層決策頁）</h1>
-      <div class="meta">版本：v1.6.0 | 日期：2026-02-24 | 地區：香港 | 渠道：Meta（Facebook / Instagram）| 投放時段：09:00-22:00（HKT）</div>
+      <h1>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.1（管理層決策頁）</h1>
+      <div class="meta">版本：v1.6.1 | 日期：2026-02-24 | 地區：香港 | 渠道：Meta（Facebook / Instagram）| 投放時段：09:00-22:00（HKT）</div>
       <p>本版聚焦三項決策：是否啟動、用哪種廣告形式、如何用闸門控制風險並推進有效激活。</p>
       <span class="chip">Executive Decision Page</span>
     </section>
@@ -259,8 +323,8 @@
       <div class="card"><div class="info-card-title">投放時段</div><div class="info-card-value">09:00-22:00（HKT）</div></div>
       <div class="card"><div class="info-card-title">內部讀者</div><div class="info-card-value">市場、銷售、營運</div></div>
       <div class="card"><div class="info-card-title">投放定位</div><div class="info-card-value">可控試驗（月度驗證）</div></div>
-      <div class="card"><div class="info-card-title">承接SLA</div><div class="info-card-value">工作時段 5 分鐘內首響；24 小時內完成 3 次跟進</div></div>
       <div class="card"><div class="info-card-title">臨時基線</div><div class="info-card-value">7 天激活率 30%</div></div>
+      <div class="card"><div class="info-card-title">決策重點</div><div class="info-card-value">先懂路徑，再看闸門</div></div>
     </div>
     <div class="callout">
       <strong>有效激活定義：</strong>需同時完成「註冊登入」「綁定打印機與支付終端」「完成菜單錄入」。
@@ -309,61 +373,121 @@
       </section>
     </div>
 
-    <h2>三、Meta 廣告形式管理層速覽</h2>
+    <h2>三、Meta 廣告形式管理層速覽（v1.6.1）</h2>
     <section class="card" style="margin-bottom: 10px;">
-      <p><strong>總覽：</strong>Meta 生態的主要承載版位是 Facebook 與 Instagram 的 Feed、Reels、Stories，以及 Messenger / WhatsApp 消息入口。首月目標類型以「線索（名單）與消息對話」為主，觸達、流量、互動作為補充，不以品牌曝光作為首要成敗判斷。</p>
+      <h3>第一層：一句話畫面（看到什麼，點了去哪）</h3>
+      <ul>
+        <li><strong>Feed：</strong>像一般滑動貼文中的贊助內容，點擊後通常進入表單或訊息頁。</li>
+        <li><strong>Stories：</strong>全螢幕直式畫面，點擊後直接跳轉到表單或對話入口。</li>
+        <li><strong>Reels：</strong>短影片流中的插入廣告，點擊後多數導向訊息或落地頁。</li>
+        <li><strong>Lead Ads（即時表單）：</strong>點擊後在 Meta 內直接彈出表單，不離開 App 即可留資。</li>
+        <li><strong>Click-to-Message：</strong>點擊後直接打開 WhatsApp 或 Messenger 對話框，立即開始問答。</li>
+      </ul>
     </section>
+
     <section class="card" style="margin-bottom: 10px;">
+      <h3>第二層：版位與形式示意圖（純 HTML/CSS）</h3>
+      <div class="visual-stack">
+        <div class="card" style="box-shadow:none;">
+          <div class="phone">
+            <div class="zone zone-stories"><strong>Stories（全屏）</strong>上方入口，快速滑過</div>
+            <div class="zone zone-feed"><strong>Feed（中段卡片）</strong>圖文/短片穿插貼文流</div>
+            <div class="zone zone-reels"><strong>Reels（短片流）</strong>沉浸式直式短影片</div>
+          </div>
+        </div>
+        <div class="mini-panels">
+          <div class="mini-panel">
+            <strong>Lead Ads 示意（彈窗表單）</strong>
+            <p>姓名｜電話｜店舖類型</p>
+            <p>[提交] 後進入名單池（CRM）</p>
+          </div>
+          <div class="mini-panel">
+            <strong>Click-to-Message 示意（對話框）</strong>
+            <p>商家：想了解你哋 POS 收費</p>
+            <p>系統：進入對話線索並建立跟進紀錄</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" style="margin-bottom: 10px;">
+      <h3>第三層：本案主選與備選的用戶路徑</h3>
+      <div class="flow-grid">
+        <div class="flow-box">
+          <strong>主選路徑（維持 v1.6）：Lead Ads + Click-to-Message</strong>
+          <div class="flow-line">看到廣告 -> 點擊 CTA -> Meta 即時表單/訊息入口 -> 留資或提問 -> 進入 CRM 跟進名單</div>
+          <p>用途：同時拿到名單量與高意向對話，維持首月樣本穩定。</p>
+        </div>
+        <div class="flow-box">
+          <strong>備選切換（主選不達標時）</strong>
+          <div class="flow-line">看到 Reels/Feed 影片 -> 點擊 -> 訊息入口或補充表單 -> 新素材/新受眾測試 -> 回流到同一跟進口徑</div>
+          <p>切換條件：當 CPL 過高或有效諮詢率偏低，優先加測 Reels/Feed 影片流補充受眾。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h3>管理層決策用形式對比</h3>
       <table>
         <thead>
           <tr>
-            <th>形式 / 版位組合</th>
-            <th>適合目的</th>
+            <th>形式</th>
+            <th>目標（解決什麼）</th>
+            <th>畫面（看到什麼）</th>
+            <th>路徑（點了去哪）</th>
             <th>優點</th>
             <th>風險 / 限制</th>
+            <th>適用前提</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Feed 圖片 / 短影片（FB+IG）</td>
-            <td>觸達、流量、初步諮詢</td>
-            <td>覆蓋穩定、素材製作成本可控</td>
-            <td>點擊後流失較高，需靠後續承接</td>
+            <td>Feed</td>
+            <td>穩定曝光與基礎導流</td>
+            <td>貼文流中的贊助圖文或短片</td>
+            <td>表單、訊息或落地頁</td>
+            <td>覆蓋穩、理解門檻低</td>
+            <td>互動深度有限</td>
+            <td>已有清楚賣點與CTA（行動按鈕）</td>
           </tr>
           <tr>
-            <td>Reels（IG/FB）</td>
-            <td>拓展新客、擴量</td>
-            <td>觸達效率高，適合冷受眾</td>
-            <td>受素材品質影響大，波動明顯</td>
+            <td>Stories</td>
+            <td>快速拉高短期點擊</td>
+            <td>全屏直式短畫面</td>
+            <td>上滑進入表單或訊息</td>
+            <td>行動感強、啟動快</td>
+            <td>停留短，訊息要非常直白</td>
+            <td>已準備簡潔文案與單一訴求</td>
           </tr>
           <tr>
-            <td>Stories（IG/FB）</td>
-            <td>快速導流、短期促動</td>
-            <td>互動直覺，時效性強</td>
-            <td>訊息停留短，需明確行動指令</td>
+            <td>Reels</td>
+            <td>擴新客與補量測試</td>
+            <td>短影片流插播內容</td>
+            <td>點擊進訊息或落地頁</td>
+            <td>觸達廣，容易拿新樣本</td>
+            <td>素材差會快速失效</td>
+            <td>有可快速迭代的短片素材</td>
           </tr>
           <tr>
-            <td>Lead Ads（即時表單）</td>
-            <td>線索獲取（名單）</td>
-            <td>填單阻力低，易控 CPL（每條線索成本）</td>
-            <td>名單品質可能參差，需有效諮詢篩選</td>
+            <td>Lead Ads</td>
+            <td>收集名單、控每條線索成本</td>
+            <td>點擊後彈出即時表單</td>
+            <td>提交後進名單池</td>
+            <td>留資阻力低，量較穩</td>
+            <td>名單品質差異大</td>
+            <td>有明確欄位設計與無效過濾規則</td>
           </tr>
           <tr>
-            <td>Click-to-Message（WhatsApp / Messenger）</td>
-            <td>消息獲客、即時對話</td>
-            <td>可直接進入對話，便於 5 分鐘首響</td>
-            <td>需銷售在線，否則回覆延遲會掉單</td>
+            <td>Click-to-Message</td>
+            <td>獲取高意向對話</td>
+            <td>點擊後開啟對話框</td>
+            <td>WhatsApp / Messenger 對話</td>
+            <td>可快速判斷意向強弱</td>
+            <td>回覆品質不穩會影響轉化</td>
+            <td>已有統一開場話術與記錄口徑</td>
           </tr>
         </tbody>
       </table>
-    </section>
-    <section class="card">
-      <h3>首月主選與備用方案</h3>
-      <ul>
-        <li><strong>主選組合：</strong>Lead Ads（主）+ Click-to-Message（輔）。Lead Ads 保障名單量，消息廣告承接高意向客，與「5 分鐘首響、24h 3 次跟進」SLA 匹配。</li>
-        <li><strong>投放理由：</strong>首月是可控試驗，需同時驗證「量」與「承接效率」，組合方案比單一路徑更穩定。</li>
-        <li><strong>備用切換：</strong>若在 HKD 2,000 節點出現 CPL 高於 HKD 160 或有效諮詢率低於 35%，將 20%-30% 預算切至 Feed/Reels 影片導流測試，補充受眾與素材驗證。</li>
-      </ul>
     </section>
 
     <h2>四、闸門時間線與決策樹（雙闸門）</h2>
@@ -381,7 +505,7 @@
           <div class="node-title">HKD 4,000 節點</div>
           <div class="node-sub">諮詢數量門檻：≥ 32</div>
           <div class="node-sub">有效諮詢門檻：≥ 12（約 38%）</div>
-          <div class="node-sub">復盤入口：版位配比 + 銷售首響達成率 + 跟進節奏</div>
+          <div class="node-sub">復盤入口：版位配比 + 對話品質 + 跟進節奏</div>
         </div>
         <div class="node">
           <div class="dot"></div>
@@ -412,20 +536,58 @@
         <ul>
           <li><strong>步驟 1：</strong>流量（諮詢量） -> 是否先天量不足</li>
           <li><strong>步驟 2：</strong>質量（有效諮詢率） -> 是否流量結構失衡</li>
-          <li><strong>步驟 3：</strong>承接激活（SLA 達成） -> 是否後鏈路承接問題</li>
+          <li><strong>步驟 3：</strong>轉化（試用/激活） -> 是否後鏈路承接問題</li>
         </ul>
       </section>
     </div>
 
-    <h2>六、附錄（管理層拍板要點）</h2>
+    <h2>六、回流與口徑（執行追蹤）</h2>
     <section class="card" style="margin-bottom: 10px;">
       <table>
-        <thead><tr><th>項目</th><th>本期設定</th><th>拍板問題</th></tr></thead>
+        <thead><tr><th>字段名（繁中）</th><th>說明</th><th>數據來源</th><th>用途</th></tr></thead>
         <tbody>
-          <tr><td>首月投放</td><td>HKD 8,000 / 30 天 / 香港 / 09:00-22:00</td><td>是否按雙闸門啟動可控試驗？</td></tr>
-          <tr><td>主選形式</td><td>Lead Ads（主）+ Click-to-Message（輔）</td><td>是否同意以線索量與承接效率雙目標評估？</td></tr>
-          <tr><td>承接口徑</td><td>5 分鐘首響；24 小時 3 次跟進；7 天激活率基線 30%</td><td>是否同意以此作為首月考核口徑？</td></tr>
-          <tr><td>追加預算</td><td>僅在 HKD 8,000 節點雙闸門達標後提請</td><td>是否同意「達標才加碼」原則？</td></tr>
+          <tr><td>活動來源（Campaign）</td><td>線索所屬投放活動名稱</td><td>Meta 後台</td><td>判斷哪個活動帶來有效量</td></tr>
+          <tr><td>廣告組來源（Ad Set）</td><td>線索所屬受眾/版位組合</td><td>Meta 後台</td><td>定位受眾設定是否有效</td></tr>
+          <tr><td>素材來源（Creative）</td><td>線索來自哪支素材</td><td>Meta 後台</td><td>識別高效素材方向</td></tr>
+          <tr><td>線索建立時間</td><td>首次提交表單或發起對話時間</td><td>Meta 表單 / WhatsApp / Messenger</td><td>觀察時段表現與分配</td></tr>
+          <tr><td>店舖類型</td><td>茶餐廳/快餐/咖啡店/其他</td><td>表單欄位 / 人工標記</td><td>看垂直類別適配度</td></tr>
+          <tr><td>店舖規模</td><td>單店/2-5店/連鎖</td><td>表單欄位 / 對話補充</td><td>判斷客群價值分層</td></tr>
+          <tr><td>是否有效諮詢</td><td>是否符合有效諮詢定義（是/否）</td><td>人工判斷</td><td>建立質量闸門核心指標</td></tr>
+          <tr><td>無效原因</td><td>非餐飲/非香港/無預算/僅詢價等</td><td>人工標記（枚舉）</td><td>反推受眾與文案問題</td></tr>
+          <tr><td>是否進入試用</td><td>未進入/已邀約/已開通</td><td>CRM / 業務紀錄</td><td>看諮詢到試用轉化</td></tr>
+          <tr><td>激活完成項（三項）</td><td>登入、綁定設備、菜單錄入勾選狀態</td><td>後台數據</td><td>看激活卡點在何步</td></tr>
+          <tr><td>激活合併狀態</td><td>未激活/部分完成/完成激活</td><td>後台數據</td><td>計算 7 天激活率</td></tr>
+          <tr><td>備註與下一步</td><td>本條線索的跟進判斷與行動</td><td>CRM / 人工填寫</td><td>避免重複跟進與遺漏</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <h2>七、首月測試矩陣（HKD 8,000）</h2>
+    <section class="card">
+      <table>
+        <thead>
+          <tr>
+            <th>核心賣點 \ 廣告形式</th>
+            <th>Lead Ads（即時表單）</th>
+            <th>Click-to-Message（對話）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>成本可控</strong><br />主張：月費清晰、首月導入門檻低</td>
+            <td>測什麼：低門檻方案是否提升留資率。<br />成功信號：CPL 下降且有效諮詢率不掉。</td>
+            <td>測什麼：價格問題是否能在對話中快速澄清。<br />成功信號：對話到有效諮詢轉化率提升。</td>
+          </tr>
+          <tr>
+            <td><strong>履約穩定</strong><br />主張：落單、出餐、收款流程更順</td>
+            <td>測什麼：流程痛點型文案能否吸引店主留資。<br />成功信號：店長/老闆身份線索比例提升。</td>
+            <td>測什麼：場景問答能否拉高高意向對話。<br />成功信號：進入試用狀態的線索占比提升。</td>
+          </tr>
+          <tr>
+            <td><strong>人手效率</strong><br />主張：減少手寫單與對帳負擔</td>
+            <td>測什麼：效率型素材是否帶來新客群。<br />成功信號：連鎖/多店線索比例上升。</td>
+            <td>測什麼：對話中展示功能點是否促進試用意願。<br />成功信號：對話後 48 小時內進試用率提升。</td>
+          </tr>
         </tbody>
       </table>
     </section>
