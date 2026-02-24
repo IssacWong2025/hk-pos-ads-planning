@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>首月 HKD 6,000 香港餐飲 POS Meta 投放規劃 v1.5.1（管理層決策駕駛艙）</title>
+  <title>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.0（管理層決策頁）</title>
   <style>
     :root {
       --bg: #f3f7fb;
@@ -107,6 +107,7 @@
 
     .grid { display: grid; gap: 12px; }
     .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .info-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
     .two-col { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
     .card {
@@ -117,6 +118,18 @@
       box-shadow: var(--shadow);
     }
 
+    .info-card-title { font-size: 12px; color: var(--muted); }
+    .info-card-value { margin-top: 6px; font-size: 16px; font-weight: 700; }
+
+    .callout {
+      margin-top: 10px;
+      border: 1px solid #cfe0ff;
+      background: #f4f8ff;
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+
     .kpi-label { color: var(--muted); font-size: 12px; margin-bottom: 6px; }
     .kpi-value { font-size: 24px; font-weight: 800; line-height: 1.1; }
     .kpi-note { margin-top: 6px; color: var(--muted); font-size: 12px; }
@@ -125,10 +138,10 @@
     .bar-row { display: grid; grid-template-columns: 52px 1fr 48px; gap: 8px; align-items: center; margin: 5px 0; font-size: 12px; color: var(--muted); }
     .track { height: 8px; border-radius: 999px; background: #eaf0fa; overflow: hidden; }
     .fill { height: 100%; border-radius: 999px; }
-    .fill-fb { background: #3b7ddd; width: 76%; }
-    .fill-ig { background: #6b7ce9; width: 92%; }
+    .fill-fb { background: #3b7ddd; width: 74%; }
+    .fill-ig { background: #6b7ce9; width: 91%; }
     .range-track { position: relative; height: 8px; border-radius: 999px; background: #eaf0fa; margin-top: 8px; }
-    .range-fill { position: absolute; left: 18%; right: 8%; top: 0; bottom: 0; background: linear-gradient(90deg, #8fb4ff 0%, #4a79d8 100%); border-radius: 999px; }
+    .range-fill { position: absolute; left: 12%; right: 6%; top: 0; bottom: 0; background: linear-gradient(90deg, #8fb4ff 0%, #4a79d8 100%); border-radius: 999px; }
 
     .channel-head { display: flex; justify-content: space-between; align-items: center; }
     .arrow-up { color: var(--good); font-weight: 700; font-size: 12px; }
@@ -189,41 +202,6 @@
 
     .tree-box { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: #fff; font-size: 13px; }
 
-    .matrix {
-      display: grid;
-      grid-template-columns: 90px 1fr;
-      gap: 10px;
-      align-items: stretch;
-    }
-
-    .axes { font-size: 12px; color: var(--muted); }
-    .matrix-grid {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      background:
-        linear-gradient(to right, transparent 49.5%, #dce6f5 49.5%, #dce6f5 50.5%, transparent 50.5%),
-        linear-gradient(to bottom, transparent 49.5%, #dce6f5 49.5%, #dce6f5 50.5%, transparent 50.5%),
-        #fff;
-      position: relative;
-      min-height: 150px;
-    }
-
-    .risk-tag {
-      position: absolute;
-      padding: 4px 8px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 700;
-      border: 1px solid;
-      background: #fff;
-    }
-
-    .p1 { right: 12px; top: 18px; color: var(--risk); border-color: #f0bec3; }
-    .p2 { left: 16px; top: 56px; color: var(--warn); border-color: #f0d8ab; }
-
-    .flow { display: grid; gap: 8px; }
-    .flow-step { border: 1px solid var(--line); border-radius: 12px; padding: 10px; background: #fff; font-size: 13px; }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -232,7 +210,15 @@
       overflow: hidden;
       background: #fff;
     }
-    th, td { text-align: left; padding: 10px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+
+    th, td {
+      text-align: left;
+      padding: 10px;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      vertical-align: top;
+    }
+
     th { background: #eef4ff; font-size: 13px; }
 
     @media (max-width: 900px) {
@@ -251,39 +237,56 @@
 <body>
   <div class="decision-bar">
     <div class="decision-grid">
-      <div class="decision-pill"><span>啟動建議</span><span class="badge b-warn">黃燈啟動</span></div>
-      <div class="decision-pill"><span>風險燈號</span><span class="badge b-warn">可控但需闸門</span></div>
-      <div class="decision-pill"><span>加碼建議</span><span class="badge b-good">連續達標後申請</span></div>
+      <div class="decision-pill"><span>啟動建議</span><span class="badge b-warn">黃燈啟動（可控試驗）</span></div>
+      <div class="decision-pill"><span>首月預算</span><span class="badge b-good">HKD 8,000 / 30 天</span></div>
+      <div class="decision-pill"><span>承接SLA</span><span class="badge b-good">5分鐘首響 + 24h 3次跟進</span></div>
     </div>
   </div>
 
   <div class="wrap">
     <section class="hero">
-      <h1>首月 HKD 6,000 香港餐飲 POS Meta 投放規劃 v1.5.1（管理層決策駕駛艙）</h1>
-      <div class="meta">版本：v1.5.1 | 日期：2026-02-13 | 渠道：Meta（Facebook / Instagram）| 口徑：投放前決策（非週報）</div>
-      <p>本版聚焦三項決策：是否啟動、如何控風險、何時可加碼。</p>
-      <span class="chip">Executive Decision Cockpit</span>
+      <h1>首月 HKD 8,000 香港餐飲 POS Meta 投放規劃 v1.6.0（管理層決策頁）</h1>
+      <div class="meta">版本：v1.6.0 | 日期：2026-02-24 | 地區：香港 | 渠道：Meta（Facebook / Instagram）| 投放時段：09:00-22:00（HKT）</div>
+      <p>本版聚焦三項決策：是否啟動、用哪種廣告形式、如何用闸門控制風險並推進有效激活。</p>
+      <span class="chip">Executive Decision Page</span>
     </section>
+
+    <h2>零、背景與口徑總覽（先對齊）</h2>
+    <div class="grid info-grid">
+      <div class="card"><div class="info-card-title">適用地區</div><div class="info-card-value">香港（繁體中文）</div></div>
+      <div class="card"><div class="info-card-title">渠道範圍</div><div class="info-card-value">Meta：Facebook + Instagram</div></div>
+      <div class="card"><div class="info-card-title">預算與周期</div><div class="info-card-value">HKD 8,000 / 30 天</div></div>
+      <div class="card"><div class="info-card-title">投放時段</div><div class="info-card-value">09:00-22:00（HKT）</div></div>
+      <div class="card"><div class="info-card-title">內部讀者</div><div class="info-card-value">市場、銷售、營運</div></div>
+      <div class="card"><div class="info-card-title">投放定位</div><div class="info-card-value">可控試驗（月度驗證）</div></div>
+      <div class="card"><div class="info-card-title">承接SLA</div><div class="info-card-value">工作時段 5 分鐘內首響；24 小時內完成 3 次跟進</div></div>
+      <div class="card"><div class="info-card-title">臨時基線</div><div class="info-card-value">7 天激活率 30%</div></div>
+    </div>
+    <div class="callout">
+      <strong>有效激活定義：</strong>需同時完成「註冊登入」「綁定打印機與支付終端」「完成菜單錄入」。
+      <br />
+      <strong>有效諮詢（可調整預設）：</strong>留下可聯絡方式 + 明確 30 天內評估/導入 POS 意向 + 屬香港餐飲門店決策者或關鍵影響者。
+    </div>
 
     <h2>一、KPI 儀表區（5 格，規劃假設）</h2>
     <div class="grid kpi-grid">
-      <div class="card"><div class="kpi-label">首月預算</div><div class="kpi-value">HKD 6,000</div><div class="kpi-note">Meta only</div></div>
+      <div class="card"><div class="kpi-label">首月預算</div><div class="kpi-value">HKD 8,000</div><div class="kpi-note">Meta only</div></div>
       <div class="card">
         <div class="kpi-label">CPM 假設（總 / FB / IG）</div>
-        <div class="kpi-value">90 / 78 / 95</div>
+        <div class="kpi-value">92 / 80 / 98</div>
         <div class="mini-chart">
-          <div class="bar-row"><span>FB</span><div class="track"><div class="fill fill-fb"></div></div><span>78</span></div>
-          <div class="bar-row"><span>IG</span><div class="track"><div class="fill fill-ig"></div></div><span>95</span></div>
+          <div class="bar-row"><span>FB</span><div class="track"><div class="fill fill-fb"></div></div><span>80</span></div>
+          <div class="bar-row"><span>IG</span><div class="track"><div class="fill fill-ig"></div></div><span>98</span></div>
         </div>
       </div>
       <div class="card">
         <div class="kpi-label">預估展示量區間</div>
-        <div class="kpi-value">54.5K-85.7K</div>
+        <div class="kpi-value">72.7K-114.3K</div>
         <div class="range-track"><div class="range-fill"></div></div>
-        <div class="kpi-note">按 CPM 110-70 粗估</div>
+        <div class="kpi-note">按 CPM 110-70 粗估（8,000 / CPM x 1,000）</div>
       </div>
-      <div class="card"><div class="kpi-label">諮詢目標</div><div class="kpi-value">40-60</div><div class="kpi-note">目標值 50</div></div>
-      <div class="card"><div class="kpi-label">有效激活目標</div><div class="kpi-value">5 位</div><div class="kpi-note">首月硬結果</div></div>
+      <div class="card"><div class="kpi-label">諮詢目標</div><div class="kpi-value">55-80</div><div class="kpi-note">目標值 65</div></div>
+      <div class="card"><div class="kpi-label">有效激活目標</div><div class="kpi-value">6 位</div><div class="kpi-note">按 7 天激活率 30% 做月內驗證</div></div>
     </div>
 
     <h2>二、渠道對比區（FB vs IG）</h2>
@@ -291,136 +294,140 @@
       <section class="card">
         <div class="channel-head"><h3>Facebook（穩態盤）</h3><span class="arrow-up">保底</span></div>
         <ul>
-          <li>成本假設：CPM 62-94 HKD</li>
+          <li>成本假設：CPM 64-96 HKD</li>
           <li>定位：偏穩定獲取可承接諮詢</li>
-          <li>管理動作：先保底，避免詢盤中斷</li>
+          <li>管理動作：保留穩定量，作為闸門達標底盤</li>
         </ul>
       </section>
       <section class="card">
         <div class="channel-head"><h3>Instagram（增量盤）</h3><span class="arrow-dyn">動態</span></div>
         <ul>
-          <li>成本假設：CPM 70-109 HKD</li>
+          <li>成本假設：CPM 72-112 HKD</li>
           <li>定位：偏擴大觸達與需求覆蓋</li>
-          <li>管理動作：按節點達成動態調整</li>
+          <li>管理動作：用於補量與測新受眾，按闸門調整</li>
         </ul>
       </section>
     </div>
 
-    <h2>三、闸門時間線與決策樹</h2>
+    <h2>三、Meta 廣告形式管理層速覽</h2>
+    <section class="card" style="margin-bottom: 10px;">
+      <p><strong>總覽：</strong>Meta 生態的主要承載版位是 Facebook 與 Instagram 的 Feed、Reels、Stories，以及 Messenger / WhatsApp 消息入口。首月目標類型以「線索（名單）與消息對話」為主，觸達、流量、互動作為補充，不以品牌曝光作為首要成敗判斷。</p>
+    </section>
+    <section class="card" style="margin-bottom: 10px;">
+      <table>
+        <thead>
+          <tr>
+            <th>形式 / 版位組合</th>
+            <th>適合目的</th>
+            <th>優點</th>
+            <th>風險 / 限制</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Feed 圖片 / 短影片（FB+IG）</td>
+            <td>觸達、流量、初步諮詢</td>
+            <td>覆蓋穩定、素材製作成本可控</td>
+            <td>點擊後流失較高，需靠後續承接</td>
+          </tr>
+          <tr>
+            <td>Reels（IG/FB）</td>
+            <td>拓展新客、擴量</td>
+            <td>觸達效率高，適合冷受眾</td>
+            <td>受素材品質影響大，波動明顯</td>
+          </tr>
+          <tr>
+            <td>Stories（IG/FB）</td>
+            <td>快速導流、短期促動</td>
+            <td>互動直覺，時效性強</td>
+            <td>訊息停留短，需明確行動指令</td>
+          </tr>
+          <tr>
+            <td>Lead Ads（即時表單）</td>
+            <td>線索獲取（名單）</td>
+            <td>填單阻力低，易控 CPL（每條線索成本）</td>
+            <td>名單品質可能參差，需有效諮詢篩選</td>
+          </tr>
+          <tr>
+            <td>Click-to-Message（WhatsApp / Messenger）</td>
+            <td>消息獲客、即時對話</td>
+            <td>可直接進入對話，便於 5 分鐘首響</td>
+            <td>需銷售在線，否則回覆延遲會掉單</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="card">
+      <h3>首月主選與備用方案</h3>
+      <ul>
+        <li><strong>主選組合：</strong>Lead Ads（主）+ Click-to-Message（輔）。Lead Ads 保障名單量，消息廣告承接高意向客，與「5 分鐘首響、24h 3 次跟進」SLA 匹配。</li>
+        <li><strong>投放理由：</strong>首月是可控試驗，需同時驗證「量」與「承接效率」，組合方案比單一路徑更穩定。</li>
+        <li><strong>備用切換：</strong>若在 HKD 2,000 節點出現 CPL 高於 HKD 160 或有效諮詢率低於 35%，將 20%-30% 預算切至 Feed/Reels 影片導流測試，補充受眾與素材驗證。</li>
+      </ul>
+    </section>
+
+    <h2>四、闸門時間線與決策樹（雙闸門）</h2>
     <section class="timeline">
       <div class="timeline-row">
         <div class="node">
           <div class="dot"></div>
           <div class="node-title">HKD 2,000 節點</div>
-          <div class="node-sub">最低諮詢門檻：12</div>
-          <div class="node-sub">達標：維持方向 | 未達：立即復盤</div>
+          <div class="node-sub">諮詢數量門檻：≥ 14</div>
+          <div class="node-sub">有效諮詢門檻：≥ 5（約 35%）</div>
+          <div class="node-sub">復盤入口：素材角度 + 受眾 + 表單欄位/首句話術</div>
         </div>
         <div class="node">
           <div class="dot"></div>
           <div class="node-title">HKD 4,000 節點</div>
-          <div class="node-sub">最低諮詢門檻：30</div>
-          <div class="node-sub">達標：放大量準備 | 未達：先補量</div>
+          <div class="node-sub">諮詢數量門檻：≥ 32</div>
+          <div class="node-sub">有效諮詢門檻：≥ 12（約 38%）</div>
+          <div class="node-sub">復盤入口：版位配比 + 銷售首響達成率 + 跟進節奏</div>
         </div>
         <div class="node">
           <div class="dot"></div>
-          <div class="node-title">HKD 6,000 節點</div>
-          <div class="node-sub">最低諮詢門檻：50</div>
-          <div class="node-sub">達標：下月擴量評估 | 未達：按歸因復盤</div>
+          <div class="node-title">HKD 8,000 節點</div>
+          <div class="node-sub">諮詢數量門檻：≥ 65</div>
+          <div class="node-sub">有效諮詢門檻：≥ 26（約 40%）</div>
+          <div class="node-sub">復盤入口：歸因排序檢查 + 下月放大/收斂決策</div>
         </div>
       </div>
       <div class="decision-tree">
-        <div class="tree-box"><strong>達標</strong> -> 依計畫推進，並觀察是否連續達標。</div>
-        <div class="tree-box"><strong>連續達標</strong> -> 可提出追加預算申請。</div>
-        <div class="tree-box"><strong>未達</strong> -> 立即依「流量 -> 質量 -> 承接」順序復盤。</div>
+        <div class="tree-box"><strong>雙闸門均達標</strong> -> 依計畫推進，保留主選組合。</div>
+        <div class="tree-box"><strong>量達標但質未達標</strong> -> 先修正表單/話術與受眾，再評估版位切換。</div>
+        <div class="tree-box"><strong>量與質均未達標</strong> -> 立即按「流量 -> 質量 -> 承接」順序復盤。</div>
       </div>
     </section>
 
-    <h2>四、風險與歸因可視化</h2>
+    <h2>五、風險與歸因可視化</h2>
     <div class="grid two-col">
       <section class="card">
-        <h3>P1/P2 風險矩陣（影響 x 概率）</h3>
-        <div class="matrix">
-          <div class="axes">
-            <div>高影響</div>
-            <div style="margin-top: 120px;">低影響</div>
-          </div>
-          <div class="matrix-grid">
-            <span class="risk-tag p1">P1 諮詢量不達標</span>
-            <span class="risk-tag p2">P2 諮詢質量偏弱</span>
-          </div>
-        </div>
+        <h3>P1/P2 風險優先級</h3>
+        <ul>
+          <li><strong>P1：</strong>諮詢量不足（直接影響闸門推進與樣本有效性）</li>
+          <li><strong>P2：</strong>有效諮詢占比偏低（名單多但可成交線索不足）</li>
+        </ul>
       </section>
       <section class="card">
         <h3>未達標歸因流程</h3>
-        <div class="flow">
-          <div class="flow-step"><strong>步驟 1：</strong>流量（諮詢量） -> 確認是否先天量不足</div>
-          <div class="flow-step"><strong>步驟 2：</strong>質量（有效諮詢占比） -> 確認是否流量結構失衡</div>
-          <div class="flow-step"><strong>步驟 3：</strong>承接激活（諮詢後轉化） -> 確認是否後鏈路承接問題</div>
-        </div>
+        <ul>
+          <li><strong>步驟 1：</strong>流量（諮詢量） -> 是否先天量不足</li>
+          <li><strong>步驟 2：</strong>質量（有效諮詢率） -> 是否流量結構失衡</li>
+          <li><strong>步驟 3：</strong>承接激活（SLA 達成） -> 是否後鏈路承接問題</li>
+        </ul>
       </section>
     </div>
 
-    <h2>五、附錄（完整依據）</h2>
+    <h2>六、附錄（管理層拍板要點）</h2>
     <section class="card" style="margin-bottom: 10px;">
-      <div class="grid two-col">
-        <section class="card">
-          <h3>5.1 投放前決策結論</h3>
-          <p><strong>建議啟動（黃燈）</strong></p>
-          <p class="kpi-note">目標、預算、渠道成本假設與節點機制已齊備，可在可控風險下啟動首月。</p>
-        </section>
-        <section class="card">
-          <h3>5.1 啟動前須確認</h3>
-          <ul>
-            <li>硬闸門：2k/4k/6k 對應 12/30/50 諮詢</li>
-            <li>未達闸門：立即按歸因順序復盤</li>
-            <li>追加預算：僅限連續達標後提請</li>
-          </ul>
-        </section>
-      </div>
-    </section>
-
-    <section class="card" style="margin-bottom: 10px;">
-      <h3 style="margin-bottom: 10px;">5.2 策略主線（先流量，後結果）</h3>
       <table>
-        <thead><tr><th>層級</th><th>本期策略</th><th>管理層判斷問題</th></tr></thead>
+        <thead><tr><th>項目</th><th>本期設定</th><th>拍板問題</th></tr></thead>
         <tbody>
-          <tr><td>流量層</td><td>先把諮詢量穩定到 40-60 區間。</td><td>是否跑出足夠需求盤？</td></tr>
-          <tr><td>質量層</td><td>在達量前提下提升有效諮詢占比。</td><td>是否避免低質流量消耗？</td></tr>
-          <tr><td>結果層</td><td>推進有效激活累計至 5 位。</td><td>是否形成可複製轉化閉環？</td></tr>
+          <tr><td>首月投放</td><td>HKD 8,000 / 30 天 / 香港 / 09:00-22:00</td><td>是否按雙闸門啟動可控試驗？</td></tr>
+          <tr><td>主選形式</td><td>Lead Ads（主）+ Click-to-Message（輔）</td><td>是否同意以線索量與承接效率雙目標評估？</td></tr>
+          <tr><td>承接口徑</td><td>5 分鐘首響；24 小時 3 次跟進；7 天激活率基線 30%</td><td>是否同意以此作為首月考核口徑？</td></tr>
+          <tr><td>追加預算</td><td>僅在 HKD 8,000 節點雙闸門達標後提請</td><td>是否同意「達標才加碼」原則？</td></tr>
         </tbody>
       </table>
-    </section>
-
-    <section class="card" style="margin-bottom: 10px;">
-      <h3 style="margin-bottom: 10px;">5.3 分階段動作與里程碑</h3>
-      <table>
-        <thead><tr><th>階段</th><th>核心動作</th><th>階段產出</th><th>推進條件</th></tr></thead>
-        <tbody>
-          <tr><td>冷啟動期</td><td>快速建立詢盤來源，辨識可持續起量方向。</td><td>諮詢量開始穩定產生</td><td>達到節點諮詢門檻</td></tr>
-          <tr><td>驗證期</td><td>保留有效組合，壓縮低效消耗，提升有效諮詢比例。</td><td>有效諮詢與激活效率同步改善</td><td>有效激活連續出現</td></tr>
-          <tr><td>放大期</td><td>擴大已驗證組合，控制風險下衝刺結果。</td><td>有效激活累計逼近或達到 5 位</td><td>節點結果持續達標</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section class="card">
-      <div class="grid two-col">
-        <section class="card">
-          <h3>5.4 追加預算機制</h3>
-          <ul>
-            <li>首月基礎預算維持 HKD 6,000。</li>
-            <li>若節點結果連續達標，可提出追加預算申請。</li>
-            <li>追加前提：方向成立（諮詢穩定）且結果向 5 位激活目標收斂。</li>
-          </ul>
-        </section>
-        <section class="card">
-          <h3>5.4 需拍板事項</h3>
-          <ul>
-            <li>是否同意依本方案啟動首月投放（黃燈啟動，節點管控）。</li>
-            <li>是否同意在連續達標後啟動追加預算審批。</li>
-          </ul>
-        </section>
-      </div>
     </section>
   </div>
 </body>

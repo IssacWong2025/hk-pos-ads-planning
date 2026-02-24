@@ -1,5 +1,12 @@
 ﻿# Changelog
 
+## v1.6.0 - 2026-02-24
+- Upgraded first-month budget baseline from HKD 6,000 to HKD 8,000 across the decision page, including KPI, gate checkpoints, and budget mechanism wording.
+- Added a new top-level "背景與口徑總覽" block for executive scan, covering geo, channel, budget cycle, delivery hours, stakeholder groups, SLA, activation baseline, and definition callouts.
+- Added a management-oriented Meta ad format briefing section with placement/goal overview, five common format combinations, primary month-one choice, SLA fit, and fallback switch conditions.
+- Upgraded gate execution from single gate to dual-gate fields (consultation volume + effective consultation), and added explicit review-action entry prompts at each checkpoint.
+- Standardized language and unit formatting in Traditional Chinese with consistent HKD notation and time range expression.
+
 ## v1.5.1 - 2026-02-13
 - Reworked visual density based on review feedback without changing planning content.
 - Expanded appendix content from collapsible blocks into always-visible visual sections.
@@ -69,9 +76,3 @@
 ## v1.0.0 - 2026-02-11
 - Initialized repository structure.
 - Published v1 strategy page.
-
-
-
-
-
-
