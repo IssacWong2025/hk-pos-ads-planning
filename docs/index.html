@@ -219,12 +219,13 @@
     }
 
     .preview-wrap { margin-top: 10px; }
-    .preview-grid { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    .preview-grid { display: grid; gap: 10px; grid-template-columns: repeat(6, minmax(0, 1fr)); }
     .preview-item {
       border: 1px solid var(--line);
       border-radius: 12px;
       background: #fff;
       padding: 8px;
+      grid-column: span 2;
     }
     .preview-item img {
       width: 100%;
@@ -235,7 +236,9 @@
       background: #f7faff;
     }
     .preview-note { font-size: 12px; margin-top: 6px; color: #324a74; }
-    .src-note { font-size: 10px; color: var(--muted); line-height: 1.45; margin-top: 4px; }
+
+    .ctm-card { grid-column: 2 / span 2; }
+    .lead-card { grid-column: 4 / span 2; }
 
     table {
       width: 100%;
@@ -262,10 +265,13 @@
       .kpi-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .timeline-row { grid-template-columns: 1fr; }
       .timeline-row::before { display: none; }
+      .preview-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .preview-item, .ctm-card, .lead-card { grid-column: span 1; }
     }
 
     @media (max-width: 560px) {
       .kpi-grid { grid-template-columns: 1fr; }
+      .preview-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -348,7 +354,6 @@
     <h2>三、Meta 廣告形式管理層速覽（v1.6.3）</h2>
     <section class="card" style="margin-bottom: 10px;">
       <h3>第一層：一句話畫面（看到什麼，點了去哪）</h3>
-      <p>Reels 與 Stories 在 Facebook 與 Instagram 都有對應版位，投放時可分別覆蓋 Facebook Reels/Stories 與 Instagram Reels/Stories（視設定而定）。</p>
       <ul>
         <li><strong>Feed：</strong>像一般滑動貼文中的贊助內容，點擊後通常進入表單或訊息頁。</li>
         <li><strong>Stories：</strong>全螢幕直式畫面，點擊後直接跳轉到表單或對話入口。</li>
@@ -365,27 +370,22 @@
           <div class="preview-item">
             <img src="./assets/meta-previews/preview_feed.png" alt="Feed 廣告示例" />
             <div class="preview-note">Feed：出現在 FB/IG 貼文流，點擊後進入落地頁、表單或訊息入口。</div>
-            <div class="src-note">來源：Hootsuite｜Instagram ads: Everything you need to know in 2026｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
           </div>
           <div class="preview-item">
             <img src="./assets/meta-previews/preview_stories.png" alt="Stories 廣告示例" />
             <div class="preview-note">Stories：出現在 FB/IG 限時動態全屏，點擊後直接跳轉 CTA 目的地。</div>
-            <div class="src-note">來源：Hootsuite｜Instagram ads: Everything you need to know in 2026｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
           </div>
           <div class="preview-item">
             <img src="./assets/meta-previews/preview_reels.png" alt="Reels 廣告示例" />
             <div class="preview-note">Reels：出現在 FB/IG Reels 短片流，點擊後導向訊息或落地頁。</div>
-            <div class="src-note">來源：Hootsuite｜Instagram ads: Everything you need to know in 2026｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
           </div>
-          <div class="preview-item">
+          <div class="preview-item ctm-card">
             <img src="./assets/meta-previews/preview_click_to_message.png" alt="Click-to-Message 廣告示例" />
             <div class="preview-note">Click-to-Message：看到廣告後點「Send Message」，直接進入 WhatsApp/Messenger 對話。</div>
-            <div class="src-note">來源：SleekFlow｜Click to WhatsApp ads: How to reduce cost on Facebook ads｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
           </div>
-          <div class="preview-item">
+          <div class="preview-item lead-card">
             <img src="./assets/meta-previews/preview_lead_ads.png" alt="Lead Ads 即時表單示例" />
             <div class="preview-note">Lead Ads：點 CTA 後在 Meta 內彈出即時表單，提交後進入名單池。</div>
-            <div class="src-note">來源：WordStream｜6 Simple Steps to a Facebook Lead Ad that Converts like Crazy｜訪問日期：2026-02-24。示例截圖僅用於說明廣告形式，實際投放以 Meta 版位預覽為準。</div>
           </div>
         </div>
       </div>
